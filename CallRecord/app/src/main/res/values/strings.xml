@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Call Record</string>
+    <string-array name="names">
+        <item>Engineer</item>
+        <item>Doctor</item>
+        <item>Agent</item>
+        <item>Teacher</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="name">
+        <item>Kotul-Akole-Sangamner</item>
+        <item>Kotul-Nimgaon-Sangmner</item>
+        <item>Rajur-Akole</item>
+        <item>Rajur-Kotul</item>
+        <item>Sangmner-Sinner</item>
+    </string-array>
+
+</resources>

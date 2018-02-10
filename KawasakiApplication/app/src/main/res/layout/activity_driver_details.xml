@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    tools:context="felix.kawasakiapplication.LoginScreen">
+
+    <include layout="@layout/tool_bar_driver_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <!--HEADER STARTS-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kawasakilogo"/>
+    </RelativeLayout>
+    <!-- HEADER ENDS -->
+
+    <!--FOOTER STARTS -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center" >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kawasakifooter"/>
+    </LinearLayout>
+
+    <!--FOOTER ENDS -->
+
+        <LinearLayout
+            android:id="@+id/heading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/header">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Drop off driver details"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_corner"/>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/heading"
+            android:layout_above="@id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="#616161"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                    <EditText
+                        android:id="@+id/input_drivername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradientback"
+                        android:drawableLeft="@drawable/usermale"
+                        android:drawablePadding="20dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:translationY="10dp"
+                        android:singleLine="true"
+                        android:hint="Driver Name"
+                        android:inputType="textCapSentences"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:textColorHint="#616161"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                    <EditText
+                        android:id="@+id/input_drivercontact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradientback"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="20dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:translationY="10dp"
+                        android:singleLine="true"
+                        android:inputType="phone"
+                        android:hint="Driver Contact Number"
+                        android:maxLength="10"
+                        android:ems="10"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:textColorHint="#616161"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                    <EditText
+                        android:id="@+id/input_driverlicense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradientback"
+                        android:drawableLeft="@drawable/car"
+                        android:drawablePadding="20dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:translationY="10dp"
+                        android:singleLine="true"
+                        android:hint="Driver License Number"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+
+                    android:id="@+id/txtSign"
+                    android:textColor="#0000ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to Sign"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:clickable="true"/>
+
+                <EditText
+                    android:id="@+id/etSign"
+                    android:backgroundTint="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:clickable="false"
+                    android:hint="SIGN"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+                    <Button
+                        android:id="@+id/btnok6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#d3d3d3"
+                        android:textColor="#32CD32"
+                        android:background="@drawable/round_corner"
+                        android:layout_marginLeft="5dp"
+                        android:text="OK"
+                        android:layout_marginRight="5dp" />
+
+                    <Button
+                        android:id="@+id/btncncl6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#d3d3d3"
+                        android:textColor="#32CD32"
+                        android:background="@drawable/round_corner"
+                        android:text="CANCEL"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    </LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employee_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/login2"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="callrecord.com.callrecord.EmployeeRecord">
+
+    <TextView
+        android:text="Emplyee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv1"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:text="Add Call Record"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv1"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/btnAdd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/mainbutton_selector" />
+
+    <Button
+        android:text="End Call Record"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnEnd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/mainbutton_selector" />
+
+
+</RelativeLayout>

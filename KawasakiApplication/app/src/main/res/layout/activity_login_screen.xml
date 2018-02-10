@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    tools:context="felix.kawasakiapplication.LoginScreen">
+
+    <include layout="@layout/tool_bar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <!--HEADER STARTS-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kawasakilogo"/>
+    </RelativeLayout>
+    <!-- HEADER ENDS -->
+
+    <!--FOOTER STARTS -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center" >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kawasakifooter"/>
+        </LinearLayout>
+
+    <!--FOOTER ENDS -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#616161"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientback"
+                android:drawableLeft="@drawable/usermale"
+                android:drawablePadding="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:translationY="10dp"
+                android:singleLine="true"
+                android:hint="USERNAME"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#616161"
+            android:layout_marginBottom="30dp"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/gradientback"
+                android:drawableLeft="@drawable/passwords"
+                android:drawablePadding="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:translationY="10dp"
+                android:singleLine="true"
+                android:hint="PASSWORD" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#d3d3d3"
+                android:textColor="#32CD32"
+                android:background="@drawable/round_corner"
+                android:layout_marginLeft="5dp"
+                android:text="OK"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btncncl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#d3d3d3"
+                android:textColor="#32CD32"
+                android:background="@drawable/round_corner"
+                android:text="CANCEL"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

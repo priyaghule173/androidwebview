@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <include layout="@layout/tool_bar_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <!--HEADER STARTS-->
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:src="@drawable/kawasakilogo"/>
+        </RelativeLayout>
+        <!-- HEADER ENDS -->
+
+        <!--FOOTER STARTS -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            android:gravity="center" >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/kawasakifooter"/>
+        </LinearLayout>
+
+        <!--FOOTER ENDS -->
+
+
+        <Button
+            android:id="@+id/generatepdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save as PDF"
+            android:layout_above="@+id/sendpdf"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/sendpdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send as an EMAIL"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+
+            android:layout_below="@+id/sendpdf"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+    </LinearLayout>

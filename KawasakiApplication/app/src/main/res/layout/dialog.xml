@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+       android:gravity="center"
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:text="Service that will be offered"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/serviceOffered"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Service"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:editable="false"
+            android:backgroundTint="@color/colorAccent"
+            android:singleLine="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/dialog_info"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#448AFF"
+            android:background="@drawable/round_corner"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="OK"/>
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#448AFF"
+            android:background="@drawable/round_corner"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="CANCEL"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

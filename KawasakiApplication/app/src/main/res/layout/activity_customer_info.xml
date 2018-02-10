@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="felix.kawasakiapplication.CustomerInfo">
+
+    <include layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--HEADER STARTS-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kawasakilogo"/>
+
+    </RelativeLayout>
+    <!-- HEADER ENDS -->
+
+    <!--FOOTER STARTS -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center" >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kawasakifooter"/>
+    </LinearLayout>
+
+    <!--FOOTER ENDS -->
+
+
+
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:background="#000000">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_ownername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/usermale"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="true"
+                    android:hint="Owner Name"
+                    android:inputType="textCapSentences"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/home"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="false"
+                    android:hint="Address"
+                    android:inputType="textCapSentences"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="true"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:hint="Contact Number"
+                    android:ems="10"
+                    android:maxLength="10"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bike Type :"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/bike_type"
+                android:background="@drawable/round_corner"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bike :"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_corner"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_bikenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/number"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="true"
+                    android:hint="Bike number"
+                    android:capitalize="characters"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_enginenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/engine"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="true"
+                    android:hint="Engine Number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#616161"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                <EditText
+                    android:id="@+id/input_kilometers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradientback"
+                    android:drawableLeft="@drawable/speed"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:translationY="10dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:hint="Check in Kilometers"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/btnok3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#d3d3d3"
+                    android:textColor="#32CD32"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginLeft="5dp"
+                    android:text="OK"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:id="@+id/btncncl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#d3d3d3"
+                    android:textColor="#32CD32"
+                    android:background="@drawable/round_corner"
+                    android:text="CANCEL"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

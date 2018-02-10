@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_end_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/login2"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="callrecord.com.callrecord.EndRecord"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:text="End Call Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/tvEndRecord"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:text="Select Date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginBottom="13dp"
+            android:textStyle="bold"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:text="DD-MM-YYYY"
+        android:gravity="center_vertical"
+        android:id="@+id/date"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edittext_selector"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:layout_marginTop="50dp">
+    <TextView
+        android:text="Select Name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/textView_Route"
+
+        android:textStyle="bold"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinner2"
+        android:background="@drawable/edittext_selector"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:src="@drawable/dropdown"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:layout_marginTop="50dp">
+    <TextView
+        android:text="Select Route"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/textView_Name"
+        android:textSize="16dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerRoute"
+                android:background="@drawable/edittext_selector"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/dropdown"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+</LinearLayout>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:text="Submit"
+       android:textSize="16dp"
+       android:textStyle="bold"
+       android:layout_marginTop="50dp"
+       android:id="@+id/btnSubmit"
+       android:background="@drawable/submit_selector"
+       android:textColor="@android:color/white"/>
+
+</LinearLayout>

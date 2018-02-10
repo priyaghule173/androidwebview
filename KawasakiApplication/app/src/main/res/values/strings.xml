@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kawasaki Service Application</string>
+
+    <string-array name="bike_type">
+        <item>NINJA</item>
+        <item>Z</item>
+        <item>VERSYS</item>
+        <item>ER</item>
+    </string-array>
+</resources>
